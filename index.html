@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frontend Mentor | E-commerce product page</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar">
+				<div class="logonavlinks">
+					<div class="logo">
+						<img src="images/logo.svg" />
+					</div>
+					<div class="navlinks">
+						<ul>
+							<li>Collections</li>
+							<li>Men</li>
+							<li>Women</li>
+							<li>About</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+				</div>
+				<div class="navcartpic">
+					<div class="cartIcon">
+						<img src="images/icon-cart.svg" />
+						<div class="cartCount hidden">1</div>
+					</div>
+					<div class="avatar">
+						<img class="photo" src="images/image-avatar.png" />
+					</div>
+				</div>
+			</nav>
+			<div class="line"></div>
+			<div class="mainCart hidden">
+				<h1 class="cartText">Cart</h1>
+				<div class="line2"></div>
+				<div class="cart">
+					<div class="productImage">
+						<img src="images/image-product-1.jpg" />
+					</div>
+					<div class="cartPara">
+						<p>Fall Limited Edition Sneakers</p>
+						<p>$125.00 x <span>$375.00</span></p>
+					</div>
+					<div class="bin">
+						<img src="images/icon-delete.svg" />
+					</div>
+				</div>
+				<button class="checkout">Checkout</button>
+			</div>
+			<div class="hero">
+				<div class="heroImages">
+					<div class="mainImage">
+						<img src="images/image-product-1.jpg" />
+					</div>
+					<div class="heroCarousel">
+						<img class="image" src="images/image-product-1.jpg" />
+						<img class="image" src="images/image-product-2.jpg" />
+						<img class="image" src="images/image-product-3.jpg" />
+						<img class="image" src="images/image-product-4.jpg" />
+					</div>
+					<div class="controls hidden">
+						<img class="previous" src="images/icon-previous.svg" />
+						<img class="next" src="images/icon-next.svg" />
+						<img class="close" src="images/icon-close.svg" />
+					</div>
+					<div class="overlay hidden"></div>
+				</div>
+				<div class="words">
+					<div class="limitedSneaker">
+						<h4 class="sneakersCompany">SNEAKER COMPANY</h4>
+						<h1 class="limitedEd">Fall Limited Edition Sneakers</h1>
+					</div>
+					<div class="paraTagCounter">
+						<article>
+							These low-profile sneakers are your perfect casual wear companion.
+							Featuring a durable rubber outer sole, they’ll withstand
+							everything the weather can offer.
+						</article>
+						<div class="pricetag">
+							<div class="uppertag">
+								<p id="price">$125.00</p>
+								<span>50%</span>
+							</div>
+							<div class="undertag">
+								<p>$250.00</p>
+							</div>
+						</div>
+						<div class="counteraddtocart">
+							<div class="counter">
+								<div class="minus">
+									<img src="images/icon-minus.svg" />
+								</div>
+								<p class="count">0</p>
+								<div>
+									<img class="plus" src="images/icon-plus.svg" />
+								</div>
+							</div>
+							<div>
+								<button id="addtocart" type="button">
+									<i class="bx bxs-cart-add bx-sm"></i>
+									<p class="addtocart">Add to cart</p>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
